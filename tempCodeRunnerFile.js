@@ -1,2 +1,1 @@
-
-// console.log(decode3(text1, tokensMap1, rules1))
+ab=tl*cd=ls*ef=dd
