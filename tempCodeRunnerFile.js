@@ -1,1 +1,3 @@
-ab=tl*cd=ls*ef=dd
+object.valueOf = () => {
+    return '1'
+}
