@@ -4,13 +4,13 @@
 //My washing machine is an old model that can only handle double the amount of load (or max_load). If the amount of clothes is more than 2 times the standard amount of load (max_load), return 'Too much clothes'. The washing machine also cannot handle any amount of clothes less than load (max_load). If that is the case, return 'Not enough clothes'.
 //The answer should be rounded to the nearest 2 decimal places.
 
-function waterNeed(water, load, clothes) {
+function checkCase(water, load, clothes) {
     if (clothes < load) return 'Not enough clothes'
     else if (clothes > (2*load)) return 'Too much clothes'
     else return Number((water*1.1**(clothes-load)).toFixed(2))
 }
 
-console.log(waterNeed(10,10,21)) //Too much clothes
-console.log(waterNeed(10,10,2)) //Not enough clothes
-console.log(waterNeed(10,11,20)) //23.58
-console.log(waterNeed(50,15,29)) //189.87
+console.log(checkCase(10,10,21)) //Too much clothes
+console.log(checkCase(10,10,2)) //Not enough clothes
+console.log(checkCase(10,11,20)) //23.58
+console.log(checkCase(50,15,29)) //189.87
