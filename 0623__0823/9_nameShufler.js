@@ -1,10 +1,10 @@
 //Write a function that returns a string in which firstname is swapped with last name.
 
-function shortLS(name) {
+function gloves(name) {
     return name.split(' ').reverse().join(' ')
 }
 
-console.log(shortLS("Idwal Augustin")) // Augustin Idwal
+console.log(gloves("Idwal Augustin")) // Augustin Idwal
 
 //without arrays
 function nameShuffler2(name) {
