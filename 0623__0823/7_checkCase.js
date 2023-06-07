@@ -10,7 +10,6 @@ function checkCase(a,b) {
     const bUpper = b.toUpperCase() == b
     if (aLetter && bLetter) return aUpper === bUpper ? 1 : 0
     else return -1
-
 }
 
 console.log(checkCase('C','B')) //1
