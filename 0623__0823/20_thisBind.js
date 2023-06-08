@@ -1,3 +1,5 @@
+//bind askPassword(user.loginOk, user.loginFail);
+
 function askPassword(ok, fail) {
     let password = 'rockstar';
     if (password == "rockstar") ok();
