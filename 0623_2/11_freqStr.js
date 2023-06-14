@@ -7,8 +7,8 @@ function highestFrequency(array) {
         if(obj[el]) obj[el]+=1
         else obj[el]=1
     })
+    const sorted = Object.keys(obj).sort((a,b)  => obj[b] - obj[a])
     return Object.keys(obj).sort((a,b)  => obj[b] - obj[a])[0]
-    
 }
 
 console.log(highestFrequency(['a', 'b', 'c', 'c', 'd', 'e'])) // -> c
