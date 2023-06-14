@@ -1,4 +1,6 @@
-/*  There is a set of tickets like:
+/*  There is a set of tickets.From these tickets, you can build a single, inseparable route.
+    There are no loops or repetitions in the route.
+    Write a program that returns tickets in the order of the itinerary.
 
   const tickets = [
     {from: 'London',to: 'Moscow'},
@@ -7,11 +9,6 @@
     {from: 'Moscow',to: 'SPb'},
     {from: 'SPb',to: 'Kairo'}
   ];
-
-    From these tickets, you can build a single, inseparable route.
-    There are no loops or repetitions in the route.
-    Write a program that returns tickets
-    in the order of the itinerary.
   */
 
 
