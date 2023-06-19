@@ -5,47 +5,26 @@
 const getIntervals = (arr) => {
     arr.sort((a, b) => a-b)
     console.log(arr)
-    let res = `${arr[0]}`
-    let count = 1
-    let j = 1
-    let wrote = false
-    for (let i=arr[1]; i <= arr[arr.length-1]; i++) {
-        console.log('i=',i,'j=', j,'arr[j]=', arr[j],'count=', count, 'wrote=', wrote)
-        if (i === arr[j]) {
-            if (wrote === true) {
-                res += `, ${arr[j]}`
-                console.log(`, ${arr[j]}`)
-            }
-            count +=1
-            j = j + 1
-            wrote = false
+    let res = {}
+    let last = 0
+    for (let i = 0; i<arr.length; i++) {
+        if (arr[i]-1 === arr[i-1]) {
+            res[last].push(arr[i])
         } else {
-            if (count < 3 && wrote === false) {
-                res += `, ${arr[j-1]}`
-                console.log(`, ${arr[j-1]}`)
-                wrote = true
-            }
-            else if (wrote === false) {
-                res += `-${arr[j-1]}`
-                console.log(`-${arr[j-1]}`)
-                wrote = true
-            }
-            count = 0
-        }
-        if (i === arr[arr.length-1]) {
-            if (count < 3 && wrote === false) {
-                res += `, ${arr[j-1]}`
-                console.log(`, ${arr[j-1]}`)
-                wrote = true
-            }
-            else if (count != 0 && wrote === false) {
-                res += `-${arr[j-1]}`
-                console.log(`-${arr[j-1]}`)
-                wrote = true
-            }
+            res[i] = [arr[i]]
+            last = i
         }
     }
-    return res
+    console.log(res)
+
+    let res2 = Object.values(res).reduce((sum,el) => {
+        let plus = ''
+        if (el.length == 1) plus = `${el[0]},`
+        if (el.length == 2) plus = `${el[0]}, ` + `${el[1]},`
+        if (el.length > 2) plus = `${el[0]}-${el[el.length-1]},`
+        return sum+plus+" "
+    },'')
+    return res2.slice(0, -2)
 }
 
 
