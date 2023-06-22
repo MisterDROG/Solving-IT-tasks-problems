@@ -6,4 +6,4 @@ a.then((res => console.log(3)))
 
 setTimeout(() => {console.log(4)}, 0)
 
-console.log(5)
+console.log(5) 
