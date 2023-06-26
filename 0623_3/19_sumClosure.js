@@ -1,3 +1,5 @@
+//write closure
+
 function sumN(n) {
     return function calc(k) {
         if (!k) return n

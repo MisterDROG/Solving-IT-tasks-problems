@@ -1,3 +1,5 @@
+//write timing
+
 console.log(1)
 
 const a = new Promise((resolve, reject) => resolve(console.log(2)))
