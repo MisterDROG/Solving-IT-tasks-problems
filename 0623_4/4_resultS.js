@@ -1,18 +1,10 @@
-const myPromise = () => Promise.resolve().then(() => console.log('1')) 
- 
-const first = () => { 
-  setTimeout(() => console.log('2'), 0); 
-  myPromise() 
-} 
- 
-async function second() { 
-  await new Promise((resolve) => { 
-    console.log('3') 
-    resolve() 
-  }) 
-  console.log('4') 
-} 
- 
-console.log('5') 
-first() 
-second()
+//Find the sum of all multiples of n below m
+
+function sumMul(n,m){
+    if ( n <= 0 || m <=0) return "INVALID"
+    let res = 0
+    for (let i=0; (i*n)<m; i++) {
+      res+=n*i
+    }
+    return res
+  }
