@@ -4,9 +4,10 @@
 function User(name) {
     this.name = name;
   }
-  User.prototype = {}; // (*)
   
-  let user = new User('John');
-  let user2 = new user.constructor('Pete');
+User.prototype = {}; // (*) switch on/of for working
+
+let user = new User('John');
+let user2 = new user.constructor('Pete');
   
-  alert( user2.name ); // undefined
+console.log( user2.name ); // undefined
