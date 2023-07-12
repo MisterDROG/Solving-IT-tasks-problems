@@ -3,8 +3,12 @@
 let array = [1, 2, 3];
 
 array = new Proxy(array, {
-  /* ваш код */
+  get(array, prop) {
+    if (prop < 0) return array[array.length + Number(prop)]
+    else return array[prop]
+  }
 });
 
-alert( array[-1] ); // 3
-alert( array[-2] ); // 2
+console.log( array[0] ); // 1
+console.log( array[-1] ); // 3
+console.log( array[-2] ); // 2
