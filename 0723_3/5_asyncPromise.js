@@ -1,4 +1,4 @@
-////What in console?
+//What in console?
 
 async function getData() {
     return await Promise.resolve('Done')
