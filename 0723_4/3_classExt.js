@@ -13,6 +13,6 @@ class Flamingo extends Bird {
     }
 }
 
-const pet = new Flamingo() \
+const pet = new Flamingo()
 
 //Flamingo Bird
