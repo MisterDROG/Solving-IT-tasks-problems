@@ -1,1 +1,0 @@
-promiseAllN.then(res => console.log(res))
