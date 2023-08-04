@@ -8,4 +8,4 @@ const nameN = "Mark"
 
 console.log(nameN.givePizza())
 
-// "Just give me some Pizza"
+// "Just give me some Pizza"s
