@@ -2,7 +2,7 @@
 
 const arrN = [1, 5, 6, 3, 9, 7];
 
-function mapN(arr: Array<number>, callback: (item: number) => number): Array<number> {
+function mapN<T, R>(arr: Array<T>, callback: (item: T) => R): Array<R> {
     const arrRes = [];
     for (let i = 0; i < arr.length; i++) {
         arrRes.push(callback(arr[i]));
