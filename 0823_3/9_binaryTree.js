@@ -100,5 +100,6 @@ console.log(' ')
 myBinaryTree.traverseDepth((node) => console.log(node.value), 'inOrder')
 console.log(' ')
 myBinaryTree.traverseDepth((node) => console.log(node.value), 'postOrder')
+
 console.log(' ')
 myBinaryTree.traverseWide((node) => console.log(node.value))
