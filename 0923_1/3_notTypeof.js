@@ -12,4 +12,4 @@ if (!typeof randomValue === 'string') {
 
 // !typeof randomValue === "string"
 // false === "string"
-// false
+// Its a string
