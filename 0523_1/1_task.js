@@ -1,3 +1,5 @@
+// total -May: // 16
+
 const root = document.querySelector('.root')
 
 function renderWaterfall(rootNode, columnCount, elementGap) {

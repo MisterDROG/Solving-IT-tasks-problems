@@ -1,4 +1,4 @@
-// total june-aug: //156 vs + 122 code = 217
+// total june-aug: 156 vs + 122/2 codeW + 5 react = 222
 //what in console?
 
 const user = {
