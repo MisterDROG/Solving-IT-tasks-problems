@@ -56,12 +56,13 @@ const Task4 = () => {
         const masRes2: { [key: number]: IMnemo[] } = {};
 
         Object.keys(sourceIntervals).forEach((key) => {
-            sourceIntervals[key].forEach((elem) => {
+            const mnemoKey = key as IMnemo;
+            sourceIntervals[mnemoKey].forEach((elem) => {
                 for (let i = elem.start / 10; i < elem.end / 10; i++) {
                     if (masRes2[i]) {
-                        masRes2[i].push(key as IMnemo);
+                        masRes2[i].push(mnemoKey);
                     } else {
-                        masRes2[i] = [key as IMnemo];
+                        masRes2[i] = [mnemoKey];
                     }
                 }
             });

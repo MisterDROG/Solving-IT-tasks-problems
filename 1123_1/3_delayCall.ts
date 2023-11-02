@@ -41,7 +41,7 @@ const Task3 = () => {
                 return { ...result, [item.region]: (result[item.region] || 0) + 1 };
             }
             return result;
-        }, {});
+        }, {} as IResult);
     };
 
     //Это выведет результат её работы справа
