@@ -1,10 +1,3 @@
-//Вспомогательные функции
-const showTaskResult = (task: number, taskResult: { result: any, expectedResult: any }) => {
-    console.log(`---Результат задачи ${task}---`)
-    console.log('Ожидаемый: ', taskResult.expectedResult)
-    console.log('Из функции: ', taskResult.result)
-}
-
 // 1. TS
 //   Написать типизацию подходящую для двух объектов, не потерять типизацию "за" ключами в endpoints, то есть key:string и Record<string не подходят
 //   Принять что сами ключи endpoints нам известны на этапе типизации каждого объекта: 
